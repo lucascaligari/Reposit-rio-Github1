@@ -31,7 +31,7 @@
             <li><a href="">Consultar Especialista</a></li>
             <li><a href="">Novidades</a></li>
             <li><a href="">Tratamentos</a></li>
-            <li><a href="">Entre em contato</a></li>
+            <li><a href="#formctt">Entre em contato</a></li>
             <li>
                 <form action="/search" method="get">
                     <input type="text" name="q" placeholder="Digite sua pesquisa...">
@@ -124,21 +124,32 @@
 
     <footer>
 
-        <p>Contato:</p>
+        <!-- formulario de entre em contato -->
+
+        <form action="/contact" id="formctt" class="forms">
+            <h2 style="color: white;">Contato:</h2>
+
+            <input type="text" placeholder="Nome">
+            <input type="email" placeholder="E-mail">
+            <input type="tel" placeholder="Telefone(DD)">
+            <textarea name="message" placeholder="Duvida" rows="10" cols="30"></textarea>
+            <button type="submit" value="Enviar >"> ENVIAR </button>
+            
+        </form>
+
         <ul class="footer-list">
             <li>
                 <a href="https://www.facebook.com/" target="_blank"><img
-                        src="Media/logotipo-circular-do-facebook-branco 1.png" height="30" alt="link para facebook"></a>
+                        src="Media/logotipo-circular-do-facebook-branco 1.png" height="40" alt="link para facebook"></a>
             </li>
             <li>
-                <a href="https://www.instagram.com/" target="_blank"><img src="Media/instagram-branco 1.png" height="30"
+                <a href="https://www.instagram.com/" target="_blank"><img src="Media/instagram-branco 1.png" height="40"
                         alt="Link para instagram" target="_blank"></a>
             </li>
             <li>
-                <a href="https://www.youtube.com/" target="_blank"><img src="Media/youtube-icon.png" height="30"
+                <a href="https://www.youtube.com/" target="_blank"><img src="Media/youtube-icon.png" height="45"
                         alt="link para Youtube"></a>
             </li>
-
         </ul>
     </footer>
 </body>
