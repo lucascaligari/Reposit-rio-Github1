@@ -72,8 +72,32 @@ article h1 {
 /*estilo do rodapé*/
 
 footer {
-    background-color: #96CBDA;
-    height: 8vh;
+    background-color: #96CBDA;  
+    height: 30vh;
+    display: flex;
+    width: 100%;
+}
+
+.forms{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin: 20px;
+    padding: 5px;
+}
+
+input{
+    margin: 1px;
+    padding: 1px;
+    border-radius: 2px;
+    border: none;
+}
+
+textarea{
+    margin: 1px;
+    padding: 1px;
+    border-radius: 2px;
+    border: none;
 }
 
 .footer-list {
@@ -82,4 +106,5 @@ footer {
     align-items: center;
     justify-content: space-evenly;
     list-style-type: none;
+    width: 50%;
 }
