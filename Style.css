@@ -1,6 +1,15 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    background-color: #96CBDA;
+}
+
 button {
-    padding: 5%;
-    
+    padding: 1%;
+
 }
 
 
@@ -13,18 +22,20 @@ button {
     display: flex;
     list-style-type: none;
     justify-content: end;
- align-items: center;
+    align-items: center;
 }
+
 .header-list {
     display: flex;
     list-style-type: none;
     align-items: center;
     justify-content: center;
 }
+
 .cart-nav {
-    
+
     border: solid 1px red;
-    border-radius: 100%;
-    padding: 0.05%;
+    border-radius: 50%;
+
     background-image: url(Media/cart\ icon.png);
 }
