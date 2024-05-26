@@ -1,0 +1,60 @@
+button {
+    padding: 5%;
+    
+}
+
+
+.navigation-bar {
+    
+    display:flex; 
+    align-items: end;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    justify-items: flex-end;
+    background-color: rgb(150, 203, 218);
+   
+}
+.nav-list {
+    display: inline-flex;
+    list-style-type: none;
+    justify-content: end;
+    align-items: center;
+    gap: 15px;
+}
+.header-list {
+    display: flex;
+    list-style-type: none;
+    align-items: end;
+    justify-content: end;
+    gap: 15px;
+}
+.cart-nav:hover {
+    color: blue;
+    border: solid 1px red;
+    border-radius: 100%;
+    padding: 0.05%;
+    background-image: url(Media/cart\ icon.png);
+    
+}
+
+.slider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.text-header {
+    display: grid;
+    align-items: center;
+    justify-items: center;
+
+}
+
+.table-1 {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+
+
+}
