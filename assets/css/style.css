@@ -3,7 +3,8 @@
 } */
 
 .nav-list {
-    margin: 5px;
+
+    margin-left: 5%;
 
     display: flex;
     list-style-type: none;
@@ -14,8 +15,8 @@
 
 .cart-nav {
     margin: 5%;
-    border: solid 1px red;
     border-radius: 20px;
+    border-style: none;
     background-image: url(Media/cart\ icon.png);
 }
 
@@ -26,9 +27,9 @@
 
 article h1 {
     color: #fff;
-    font-size: 40px;
+    font-size: 1.5rem;
     font-style: italic;
-    margin-left: 25%;
+    text-align: center;
 }
 
 .media-logo {
@@ -42,7 +43,7 @@ article h1 {
     margin: 5px;
     padding: 1%;
     text-decoration: none;
-    font-size: 30px;
+    font-size: 1rem;
     display: flex;
     list-style-type: none;
     align-items: center;
@@ -69,17 +70,30 @@ article h1 {
 
 }
 
+
+section h2 {
+    background-color: #96CBDA;
+    font-size: 20px;
+    color: #fff;
+    text-align: center;
+}
+
+section img {
+    margin-top: 1%;
+    display: flex;
+    align-content: center;
+}
+
 /*estilo do rodapé*/
 
 footer {
+    margin-top: 1%;
     background-color: #96CBDA;
-    height: 8vh;
-}
-
-.footer-list {
-    margin: 20px 100px;
+    height: 5vh;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
     list-style-type: none;
 }
+
+.footer-list {}
