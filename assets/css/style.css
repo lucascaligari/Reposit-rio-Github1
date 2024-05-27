@@ -39,7 +39,7 @@ article h1 {
     margin: auto;
 }
 
-.header-list {
+.header__list {
     margin: 5px;
     padding: 1%;
     text-decoration: none;
@@ -82,6 +82,22 @@ section img {
     margin-top: 1%;
     display: flex;
     align-content: center;
+}
+
+.section__pomada {
+
+    display: grid;
+    grid-template-areas:
+        "img p";
+    gap: 25%;
+    margin: auto;
+    padding: 1%;
+
+}
+
+section div p {
+    font-size: 1rem;
+
 }
 
 /*estilo do rodapé*/
