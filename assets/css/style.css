@@ -55,6 +55,65 @@ button {
     display: grid;
     grid-template-columns: auto;
     grid-template-rows: auto;
+    gap: 10px;
+    grid-template-areas: 
+    "div1 div2"
+    "div3 div4";
+    justify-items: center;
+
 
 
 }
+
+.footer {
+    background-color: #96CBDA;
+    
+}
+
+.header {
+    background-color: #96CBDA;
+}
+
+.table-2 {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    gap: 5px;
+    justify-items: start;
+    align-content: start;
+    grid-template-areas:
+    "divgrid1 divgrid3 divgrid5"
+    "divgrid2 divgrid4 divgrid6"
+    "divgrid7 divgrid9 divgrid11"
+    "divgrid8 divgrid10 divgrid12"
+    "divgrid13 divgrid15 ."
+    "divgrid14 divgrid16 .";
+    
+
+}
+
+.tadafila {
+    display: flex;
+    background-color: #ffff;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: start;
+
+}
+
+.pomoda {
+    display: flex;
+    background-color: #ffff;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: start;
+
+}
+ .estamos {
+    display: flex;
+    background-color: #ffff;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: start;
+
+ }
