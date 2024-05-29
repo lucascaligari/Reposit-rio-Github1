@@ -10,25 +10,28 @@
     margin: auto;
 }
 
+/* .container { 
+    height: 20vh;
+}*/
+
 h1 {
-    font-size: 48px;
+    font-size: 0.9rem;
     color: #066a75;
     padding: 2px 0 10px 0;
-
     text-align: center;
-    padding-bottom: 30px;
-    font-style: italic;
+    /* padding-bottom: 30px; */
+    /* font-style: italic; */
 }
 
 .content {
-    width: 500px;
-    min-height: 560px;
-    margin: 0px auto;
-    position: relative;
+    width: 100%;
+    margin: 5%;
+
+
 }
 
 h2 {
-    font-size: 48px;
+    font-size: 1.5rem;
     color: #066a75;
     padding: 2px 0 10px 0;
     font-weight: bold;
@@ -162,10 +165,10 @@ input[type="submit"]:hover {
 #cadastro,
 #login {
     position: absolute;
-    top: 0px;
-    width: 88%;
-    padding: 18px 6% 60px 6%;
-    margin: 0 0 35px 0;
+    /* top: 0px; */
+    width: 90%;
+    padding: 2%;
+    /* margin: 0 0 35px 0; */
     background: #f7f7f7;
     border: 1px solid rgba(147, 184, 189, 0.8);
 
