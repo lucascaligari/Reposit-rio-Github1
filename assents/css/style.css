@@ -1,0 +1,117 @@
+/* header {
+    background-color: #96CBDA;
+} */
+
+.nav-list {
+
+    margin-left: 5%;
+
+    display: flex;
+    list-style-type: none;
+    justify-content: end;
+    align-items: end;
+
+}
+
+.cart-nav {
+    margin: 5%;
+    border-radius: 20px;
+    border-style: none;
+    background-image: url(Media/cart\ icon.png);
+}
+
+.article-header {
+    background-color: #96CBDA;
+
+}
+
+article h1 {
+    color: #fff;
+    font-size: 1.5rem;
+    font-style: italic;
+    text-align: center;
+}
+
+.media-logo {
+    display: block;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+.header__list {
+    margin: 5px;
+    padding: 1%;
+    text-decoration: none;
+    font-size: 1rem;
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.main-section-one {
+    font-size: 20px;
+    color: #fff;
+    background-color: #96CBDA;
+    margin: 3%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.main-products {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-left: 15px;
+    list-style-type: none;
+    margin-bottom: 15px;
+
+
+}
+
+
+section h2 {
+    background-color: #96CBDA;
+    font-size: 20px;
+    color: #fff;
+    text-align: center;
+}
+
+section img {
+    margin-top: 1%;
+    display: flex;
+    align-content: center;
+}
+
+.section__pomada {
+
+    display: grid;
+    grid-template-areas:
+        "img p";
+    gap: 25%;
+    margin: auto;
+    padding: 1%;
+
+}
+
+section div p {
+    font-size: 1rem;
+
+}
+
+/*estilo do rodapé*/
+
+footer {
+    margin-top: 1%;
+    background-color: #96CBDA;
+    height: 5vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    list-style-type: none;
+}
+
+.footer-list {
+    background-color: gray;
+}
