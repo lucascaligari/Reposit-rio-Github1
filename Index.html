@@ -18,35 +18,74 @@
 
 <body>
     <nav>
-        <ul class="nav-list">
-            <li><a href="login.html" title="link para pagina de login"> <button>Login</button></a>
-            </li>
-            <li><button class="cart-nav" type="submit"><img src="assets/image/carrinho-de-compras.png"
-                        alt="botão para acessar o carrinho de compras"></button>
-            </li>
+        <nav class="navbar bg-body-tertiary fixed-top">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                    aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Dr. Libído</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Novidades</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Tratamentos</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Solicitar ajuda de um Especialista</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    Dropdown
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <form class="d-flex mt-3" role="search">
+                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                            <button class="btn btn-outline-success" type="submit">Search</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </nav>
+    <ul class="nav-list">
+        <li><a href="login.html" title="link para pagina de login"> <button>Login</button></a>
+        </li>
+        <li><button class="cart-nav" type="submit"><img src="assets/image/carrinho-de-compras.png"
+                    alt="botão para acessar o carrinho de compras"></button>
+        </li>
 
-        </ul>
+    </ul>
 
 
     </nav>
     <article class="article-header">
-        <img src="assets/image/logo-dr.-libido-branco.png" alt="logo Dr. Libido" height="100" class="media-logo" />
+        <img src="assets/image/logo-dr.-libido-branco.png" alt="logo Dr. Libido" height="100px" class="media-logo" />
         <h1>Excelência no Cuidado da Saúde Masculina</h1>
     </article>
     <header>
-        <div class="dropdown">
-            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
-                aria-expanded="false">
-                Mais Informações
-            </button>
-            <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="index.html">Home</a></li>
-                <li><a class="dropdown-item" href="espec.html"> Consultar Especialista</a></li>
-                <li><a class="dropdown-item" href="news.html">Novidades</a></li>
-                <li><a class="dropdown-item" href="trat.html">Tratamentos</a></li>
-                <li><a class="dropdown-item" href="contact.html">Entre em contato</a></li>
-            </ul>
-        </div>
+
 
         <form action="/search" method="get">
             <!-- <input type="text" name="search" placeholder=""> -->
@@ -76,12 +115,31 @@
         <section class="main-section-one">
             <h2>Conheça nossos Produtos </h2>
         </section>
+        <div class="card">
+            <img src="assets/image/Rectangle 45.png" class="card-img-top" alt="...">
+
+            <div class="card-body">
+                <h5 class="card-title">Tadalafila</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                    card's content.</p>
+                <a href="#" class="btn btn-primary">Comprar</a>
+            </div>
+        </div>
+
+        <div class="card" aria-hidden="true">
+            <img src="assets/image/Rectangle 44.png" element title="frasco de remedio" alt="cartela de remédio">
+            <div class="card-body">
+                <h5 class="card-title placeholder-glow">
+
+                </h5>
+                <a class="btn btn-primary disabled placeholder col-6" aria-disabled="true"></a>
+            </div>
+        </div>
 
         <ul class="main-products">
             <li><img src="assets/image/Rectangle 45.png" element alt="imagem de um frasco de remedio" element
                     title="frasco de remedio" class="img__prod"> </li>
-            <li><img src="assets/image/Rectangle 44.png" element title="frasco de remedio" alt="cartela de remédio"
-                    class="img__prod">
+            <li><img class="img__prod">
             </li>
 
         </ul>

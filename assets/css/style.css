@@ -19,6 +19,8 @@
 .article-header {
     background-color: #96CBDA;
     width: 100%;
+    display: flex;
+    margin-top: 10%;
 
 }
 
