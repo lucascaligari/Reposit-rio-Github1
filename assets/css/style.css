@@ -1,6 +1,6 @@
-/* header {
-    background-color: #96CBDA;
-} */
+header {
+    background-color: #38a9c9;
+}
 
 .nav-list {
 
@@ -25,11 +25,46 @@
 
 }
 
+button {
+    outline: none;
+}
+
 article h1 {
     color: #fff;
     font-size: 1.5rem;
     font-style: italic;
     text-align: center;
+}
+
+article p {
+    font-size: 1.2rem;
+    font-family: "Roboto", sans-serif;
+}
+
+.fst__text {
+    display: block;
+}
+
+.animate__bounceInLeft {
+    animation-name: bounceInLeft;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-play-state: running;
+}
+
+li a {
+    color: #fff;
+    font-family: "Roboto", sans-serif;
+    font-weight: 900;
+    font-size: 1.7rem;
+    font-style: bold;
+    text-align: center;
+    width: 0;
+    height: 0.2rem;
+    margin-top: 10px;
+    padding: 0 10px;
 }
 
 .media-logo {
@@ -40,7 +75,7 @@ article h1 {
 }
 
 .header__list {
-    margin: 5px;
+    margin: 0px;
     padding: 1%;
     text-decoration: none;
     font-size: 1rem;
