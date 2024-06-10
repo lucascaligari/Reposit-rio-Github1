@@ -3,19 +3,17 @@ header {
 }
 
 .nav-list {
-
-    margin-left: 5%;
-
+    
     display: flex;
     list-style-type: none;
-    justify-content: end;
-    align-items: end;
+    justify-content: center;
+    align-items: space-between;
 
 }
 
 .cart-nav {
     margin: 5%;
-    border-radius: 20px;
+    border-radius: 10px;
     border-style: none;
     background-image: url(Media/cart\ icon.png);
 }
@@ -27,6 +25,12 @@ header {
 
 button {
     outline: none;
+}
+
+h2 p {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
 }
 
 article h1 {
@@ -42,17 +46,11 @@ article p {
 }
 
 .fst__text {
-    display: block;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
 }
 
-.animate__bounceInLeft {
-    animation-name: bounceInLeft;
-    animation-duration: 1s;
-    animation-timing-function: ease-in-out;
-    animation-iteration-count: 1;
-    animation-direction: normal;
-    animation-play-state: running;
-}
 
 li a {
     color: #fff;
@@ -86,9 +84,10 @@ li a {
 }
 
 .main-section-one {
+    padding: 10px;
     font-size: 20px;
     color: #fff;
-    background-color: #96CBDA;
+    background-color: #1e85a1;
     margin: 3%;
     display: flex;
     justify-content: space-around;
@@ -107,7 +106,7 @@ li a {
 
 
 section h2 {
-    background-color: #96CBDA;
+    background-color: #1e85a1;
     font-size: 20px;
     color: #fff;
     text-align: center;
@@ -139,8 +138,8 @@ section div p {
 
 footer {
     margin-top: 1%;
-    background-color: #96CBDA;
-    height: 5vh;
+    background-color: #141718;
+    height: 10vh;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
