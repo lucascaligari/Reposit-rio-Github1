@@ -1,41 +1,65 @@
-.article-header {
+/* CSS reset */
+
+
+header {
+    width: 100%;
+    margin-bottom: 1%;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
     background-color: #96CBDA;
 
 }
 
-.media-logo {
+.media__logo {
     display: block;
-    left: 0;
-    right: 0;
-    margin: auto;
+    margin-left: auto;
+    margin-right: auto;
+    height: 15vh;
 }
 
-h1 {
-    font-size: 48px;
-    color: #066a75;
-    padding: 2px 0 10px 0;
+.header__h1 {
+    font-size: 2.3rem;
+}
+
+/* header section h1 {
+    margin-top: 1%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-align: center;
-    padding-bottom: 30px;
-    font-style: italic;
+    color: #fff;
+    font-size: 1rem;
+} */
+
+a {
+    text-decoration: none;
 }
 
+/* esconde as ancoras da tela */
+a.links {
+    display: none;
+}
+
+/* content que contem os formulários */
 .content {
-    width: 500px;
-    min-height: 560px;
+    width: 400px;
     margin: 0px auto;
     position: relative;
 }
 
-h2 {
+/* formatando o cabeçalho dos formulários */
+h1 {
     font-size: 48px;
     color: #066a75;
-    padding: 2px 0 10px 0;
+    padding: 10px 0;
+    font-family: Arial, sans-serif;
     font-weight: bold;
     text-align: center;
     padding-bottom: 30px;
 }
 
-h2:after {
+h1:after {
     content: ' ';
     display: block;
     width: 100%;
@@ -49,7 +73,7 @@ p {
     margin-bottom: 15px;
 }
 
-.content p:first-child {
+p:first-child {
     margin: 0px;
 }
 
@@ -58,6 +82,7 @@ label {
     position: relative;
 }
 
+/**** advanced input styling ****/
 /* placeholder */
 ::-webkit-input-placeholder {
     color: #bebcbc;
@@ -74,7 +99,6 @@ input {
     outline: none;
 }
 
-/*estilo dos input,  menos o checkbox */
 input:not([type="checkbox"]) {
     width: 95%;
     margin-top: 4px;
@@ -95,7 +119,7 @@ input:not([type="checkbox"]) {
 input[type="submit"] {
     width: 100% !important;
     cursor: pointer;
-    background: rgb(61, 157, 179);
+    background: #3d9db3;
     padding: 8px 5px;
     color: #fff;
     font-size: 20px;
@@ -109,55 +133,49 @@ input[type="submit"] {
     transition: all 0.2s linear;
 }
 
-/*estilo do botão submit no hover */
 input[type="submit"]:hover {
-    background: #96CBDA;
+    background: #4ab3c6;
 }
 
-input {
-    outline: none;
+/*marcando os links para mudar de um formulário para outro */
+.link {
+    position: absolute;
+    background: #e1eaeb;
+    color: #7f7c7c;
+    left: 0px;
+    height: 5vh;
+    width: 100%;
+    padding: 17px 30px 20px 30px;
+    font-size: 16px;
+    text-align: right;
+    border-top: 1px solid #dbe5e8;
+
+    -webkit-border-radius: 0 0 5px 5px;
+    border-radius: 0 0 5px 5px;
 }
 
-/*estilo dos input,  menos o checkbox */
-input:not([type="checkbox"]) {
-    width: 95%;
-    margin-top: 4px;
-    padding: 10px;
-    border: 1px solid #b2b2b2;
+.link a {
+    font-weight: bold;
+    background: #f7f8f1;
+    padding: 6px;
+    color: rgb(29, 162, 193);
+    margin-left: 10px;
+    border: 1px solid #cbd518;
 
-    -webkit-border-radius: 3px;
-    border-radius: 3px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
 
-    -webkit-box-shadow: 0px 1px 4px 0px rgba(168, 168, 168, 0.6) inset;
-    box-shadow: 0px 1px 4px 0px rgba(168, 168, 168, 0.6) inset;
-
-    -webkit-transition: all 0.2s linear;
-    transition: all 0.2s linear;
+    -webkit-transition: all 0.4s linear;
+    transition: all 0.4s linear;
 }
 
-/*estilo do botão submit */
-input[type="submit"] {
-    width: 100% !important;
-    cursor: pointer;
-    background: rgb(61, 157, 179);
-    padding: 8px 5px;
-    color: #fff;
-    font-size: 20px;
-    border: 1px solid #fff;
-    margin-bottom: 10px;
-    text-shadow: 0 1px 1px #333;
-
-    -webkit-border-radius: 5px;
-    border-radius: 5px;
-
-    transition: all 0.2s linear;
+.link a:hover {
+    color: #39bfd7;
+    background: #f7f7f7;
+    border: 1px solid #4ab3c6;
 }
 
-/*estilo do botão submit no hover */
-input[type="submit"]:hover {
-    background: #96CBDA;
-}
-
+/* estilos para para ambos os formulários */
 #cadastro,
 #login {
     position: absolute;
@@ -165,7 +183,7 @@ input[type="submit"]:hover {
     width: 88%;
     padding: 18px 6% 60px 6%;
     margin: 0 0 35px 0;
-    background: #f7f7f7;
+    background: rgb(247, 247, 247);
     border: 1px solid rgba(147, 184, 189, 0.8);
 
     -webkit-box-shadow: 5px;
@@ -180,7 +198,6 @@ input[type="submit"]:hover {
     animation-fill-mode: both;
 }
 
-/* Efeito ao clicar no botão ( Ir para Login ) */
 #paracadastro:target~.content #cadastro,
 #paralogin:target~.content #login {
     z-index: 2;
@@ -191,7 +208,6 @@ input[type="submit"]:hover {
     animation-delay: .1s;
 }
 
-/* Efeito ao clicar no botão ( Cadastre-se ) */
 #registro:target~.content #login,
 #paralogin:target~.content #cadastro {
     -webkit-animation-name: fadeOutLeft;
@@ -246,4 +262,33 @@ input[type="submit"]:hover {
         opacity: 0;
         transform: translateX(-20px);
     }
+}
+
+@media only screen and (min-width: 300px) and (max-width: 767px) {
+    header {
+        display: flex;
+        width: 100%;
+    }
+
+    .header__h1 {
+        margin-top: 5%;
+        font-size: 0.7rem;
+    }
+
+    .media__logo {
+        display: flex;
+        justify-content: center;
+        /* margin-left: auto;
+        margin-right: auto; */
+        height: 10vh;
+    }
+
+    .content {
+        width: 400px;
+        /* margin: 1%; */
+        position: relative;
+    }
+
+
+
 }
