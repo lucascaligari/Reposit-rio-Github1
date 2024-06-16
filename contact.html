@@ -4,50 +4,97 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./assets/css/global.css">
-    <link rel="stylesheet" href="./assets/css/style.css">
-    <link rel="shortcut icon" type="imagex/png" href="./assets/image/logo dr. libido 1.jpg">
-    <title>Dr. Libido</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+
+
+    <link rel="stylesheet" href="assets/css/global.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/login.css">
+    <title>Dr Libido</title>
 
 </head>
 
 <body>
-    <nav>
-        <ul class="nav-list">
-            <li><a href="login.html" title="link para pagina de login"> <button>Login</button></a>
-            </li>
-            <li><button class="cart-nav" type="submit"><img src="assets/image/carrinho-de-compras.png"
-                        alt="botão para acessar o carrinho de compras"></button>
-            </li>
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html"><img src="assets/image/logo-dr.-libido-branco.png"
+                    alt="Logo do site em Branco" class="nav__logo"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="Index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="trat.html">Tratamentos</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Saiba Mais
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="news.html">Novidades</a></li>
+                            <li><a class="dropdown-item" href="contact.html">Contato</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item bg-succes d-flex justify-content-center"
+                                    href=" login.html"><button class="btn btn-outline-primary bg-light"
+                                        type="submit">Login</button></a></li>
+                        </ul>
+                    </li>
 
-        </ul>
-
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Digite aqui" aria-label="Search">
+                    <button class="btn btn-outline-primary bg-light nav__btn--search" type="submit">Buscar</button>
+                </form>
+                <button class="btn btn-outline-primary bg-light d.flex nav__cart--button" type="submit"><a
+                        href="cart.html"><img src="assets/image/cart icon.png" alt="" class=" nav__cart"></a></button>
+            </div>
+        </div>
     </nav>
-    <article class="article-header">
-        <img src="assets/image/logo-dr.-libido-branco.png" alt="logo Dr. Libido" height="100" class="media-logo" />
-        <h1>Excelência no Cuidado da Saúde Masculina</h1>
-    </article>
+
     <header>
 
-        <ul class="header__list">
-            <li> <a href="index.html" title="link para retornar a página home"></a>Home</li>
-            <li><a href="espec.html" title="link para página de especialistas">Consultar Especialista</a></li>
-            <li><a href="news.html" title="link para a página de novidades">Novidades</a></li>
-            <li><a href="trat.html" title="link para a página de tratamentos">Tratamentos</a></li>
-            <li><a href="contact.html" title="link para a página de contato">Entre em contato</a></li>
-            <li>
-                <form action="/search" method="get">
-                    <input type="text" name="q" placeholder="Digite sua pesquisa...">
-                    <button type="submit">Pesquisar</button>
-                </form>
-            </li>
-        </ul>
-
-        <section>
-            <img src="assets/image/Nav-site .png" alt="banner do site" width="100%">
-        </section>
+        <div id="carouselExampleAutoplaying" class="carousel slide bg-light" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="assets/image/Nav-site .png "
+                        class="d-flex w-100 header__carousel--first justify-content-center" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="assets/image/ir-urologista-porque.jpg" class="d-block w-100 header__carousel--second"
+                        alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="assets/image/Captura-de-Tela-2023-07-06-as-23.29.27.png"
+                        class="d-block w-100 header__carousel--third" alt="...">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
 
     </header>
+
     <main>
         <form class="row g-3">
             <div class="col-md-6">
@@ -94,4 +141,31 @@
             </div>
         </form>
     </main>
+    <footer class="footer">
+        <img src="./assets/image/logo-dr.-libido-branco.png" class="footer__logo">
+        <div class="novidades">
+            <a href="index.html">Home</a>
+            <a href="contact.html">Contato</a>
+            <a href="news.html">Novidades</a>
+        </div>
+        <div class="encontre">
+            <a href="espec.html">Consulte um Especialista</a>
+
+            <a href="login.html">Login</a>
+        </div>
+        <div class="redes-sociais">
+            <a href="#"><img src="assets/image/logotipo-circular-do-facebook-branco 1.png" alt=""></a>
+            <a href="#"><img src="assets/image/instagram-branco 1.png" alt=""></a>
+            <a href="#"><img src="assets/image/youtube-icon.png" alt="" class="footer__youtube"></a>
+        </div>
+        <p class="footer__devs">Desenvolvedores: <a href="https://www.instagram.com/lucascaligari" target="_blank">Lucas
+                Caligari</a> - <a href="https://www.instagram.com/gab_zenaro/" target="_blank">Gabriel
+                Zenaro</a></p>
+    </footer>
+
+    <script src="js/jquery.js"></script>
+    <script src="js/script.js"></script>
+
+
+</body>
 </body>
